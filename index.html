@@ -1165,7 +1165,7 @@ Answer helpfully and concisely. If something isn't covered, invite them to reach
 
 async function sendQ() {
   const q = document.getElementById('q').value.trim();
-  const apiKey = document.getElementById('apiKey').value.trim();
+  const apiKey = document.getElementById('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').value.trim();
   if (!q) return;
   if (!apiKey) {
     document.getElementById('ansBox').classList.add('show');
@@ -1184,7 +1184,7 @@ async function sendQ() {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
-        'x-api-key': apiKey,
+        'x-api-key': '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',
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true'
       },
